@@ -1,5 +1,24 @@
 <?php
 
+/*
+ * Bubble Sort Algorithm
+ * 
+ * This sorting algorithm is comparison-based algorithm in which each pair of adjacent elements is compared 
+ * and the elements are swapped if they are not in order. 
+ * 
+ * Bubble sort starts with very first two elements, comparing them to check which one is greater. 
+ * 
+ * Bubble Sort compares each pair of array element unless the whole array is completely sorted in an ascending order. 
+ * 
+ * This may cause a few complexity issues like what if the array needs no more swapping as all the elements are already ascending.
+ * 
+ * To ease-out the issue, we use one flag variable *swapped* which will help us see if any swap has happened or not. 
+ * 
+ * If no swap has occurred, i.e. the array requires no more processing to be sorted, it will come out of the loop.
+ * 
+ * This algorithm is not suitable for large data sets as its average and worst case complexity are of Ο(n^2) where n is the number of items.
+ */
+
 function bubble_sort( $arr ) {
     $temp = 0;
     $arr_size = count($arr)-1;
@@ -37,4 +56,5 @@ echo "Before sorting:<pre>";
 print_r( $sample_arr ); 
 echo "</pre>After sorting<pre>";
 print_r( $sorted_arr );
+
 ?>
