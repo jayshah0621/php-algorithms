@@ -13,14 +13,14 @@
  * 
  * In this algorithm, a sub-list is maintained which is always sorted.
  * 
- * An element which is to be insert'ed in this sorted sub-list has to find its appropriate place 
+ * An element which is to be inserted in this sorted sub-list has to find its appropriate place 
  * and then it has to be inserted there. Hence the name, insertion sort.
  * 
  * The array is searched sequentially and unsorted items are moved and inserted into the sorted sub-list.
  * 
  * While working with small arrays Insertion sort is one of the fastest algorithms, even faster than Quick sort.
  * 
- * This algorithm is not suitable for large data sets as its average and worst case complexity are of Ο(n^2), where n is the number of items.
+ * This algorithm is not suitable for large data sets as its average and worst case complexity are of Ο(n^2).
  * 
  */
 

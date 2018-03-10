@@ -25,7 +25,7 @@
  * Sometimes referred to as "sinking sort". 
  * The algorithm gets its name from the way smaller elements “bubble” to the top of the list.
  * 
- * This algorithm is not suitable for large data sets as its average and worst case complexity are of Ο(n^2) where n is the number of items.
+ * This algorithm is not suitable for large data sets as its average and worst case complexity are of Ο(n^2).
  * 
  */
 
