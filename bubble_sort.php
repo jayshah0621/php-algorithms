@@ -18,12 +18,20 @@
  * 
  * If no swap has occurred, i.e. the array requires no more processing to be sorted, it will come out of the loop.
  * 
+ * After every iteration, the highest values settles down at the end of the array. 
+ * Hence, the next iteration need not include already sorted elements.
+ * So, for each inner iteration we can reduce the size of the array.
+ * 
+ * Sometimes referred to as "sinking sort". 
+ * The algorithm gets its name from the way smaller elements “bubble” to the top of the list.
+ * 
  * This algorithm is not suitable for large data sets as its average and worst case complexity are of Ο(n^2) where n is the number of items.
+ * 
  */
 
 function bubble_sort( $arr ) {
-    $temp = 0;
-    $arr_size = count($arr)-1;
+    $temp       = 0;
+    $arr_size   = count( $arr ) - 1;
  
     for( $i = 0, $k = $arr_size; $i < $arr_size, $k > 0; $i++, $k-- ) {
         $swapped = 0;
@@ -56,6 +64,7 @@ $sorted_arr = bubble_sort( $sample_arr );
 
 echo "Before sorting:<pre>";
 print_r( $sample_arr ); 
+
 echo "</pre>After sorting<pre>";
 print_r( $sorted_arr );
 
