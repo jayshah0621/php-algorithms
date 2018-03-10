@@ -6,6 +6,8 @@
  * This sorting algorithm is comparison-based algorithm in which each pair of adjacent elements is compared 
  * and the elements are swapped if they are not in order. 
  * 
+ * It is an in-place sorting algorithm. It does not require additional memory/space for sorting. 
+ * 
  * Bubble sort starts with very first two elements, comparing them to check which one is greater. 
  * 
  * Bubble Sort compares each pair of array element unless the whole array is completely sorted in an ascending order. 
